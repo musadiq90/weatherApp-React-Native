@@ -5,7 +5,7 @@ import * as Location from "expo-location";
 import WeatherInfo from './Components/WeatherInfo'
 import UnitsPicker from './Components/UnitsPicker'
 import { colors } from './utils/index'
-
+import ReloadIcon from './Components/ReloadIcon'
 
 const WEATHER_API_KEY = "7137b4fed3014aef83622ced40260ca9 ";
 const BASE_WEATHER_URL = 'https://api.openweathermap.org/data/2.5/weather?'
@@ -53,7 +53,8 @@ export default function App() {
       <View style={styles.container}>
         <StatusBar style="auto" />
         <View style={styles.main} >
-          <UnitsPicker unitsSystem={unitsSystem} setUnitsSystem={setUnitsSystem} />        
+          <UnitsPicker unitsSystem={unitsSystem} setUnitsSystem={setUnitsSystem} />  
+          <ReloadIcon load={load} />      
           <WeatherInfo currentWeather={currentWeather} />
         </View>
         
