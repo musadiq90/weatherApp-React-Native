@@ -24,6 +24,9 @@ export default function WeatherDetails({currentWeather}) {
     )
 }
 
+
+
+
 const styles = StyleSheet.create ({
     WeatherDetails : {
         marginTop : "auto",
